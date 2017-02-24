@@ -30,6 +30,11 @@ public class EmployeeController {
 	public String viewHome() {
      return "home";
 	}
+
+	@RequestMapping(value = "/health", method = RequestMethod.GET)
+	public String healthCheck() {
+     return "healthCheck";
+	}	
 	
 	@RequestMapping("/list")
 	public String listContacts(Map<String, Object> map) {
